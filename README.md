@@ -47,7 +47,15 @@ PORT=3000
 ENCRYPTION_KEY=your-256-bit-encryption-key-in-hex
 ```
 
-**Note**: Replace `your-256-bit-encryption-key-in-hex` with a securely generated 256-bit (32-byte) encryption key in hexadecimal format.
+## Note on Encryption Key
+
+**Important:** The encryption key included in this repository is for **testing and development purposes only**. This key is defined in the `.env` file as `ENCRYPTION_KEY` to simplify setup for contributors and testers.
+
+### Security Reminder:
+- **Do not use this key in production**: Generate a new, secure 256-bit key for any production deployment.
+- **Replace the Key**: Before deploying, replace the key in the `.env` file with a secure one:
+  ```bash
+  node -e "console.log(require('crypto').randomBytes(32).toString('hex'))"
 
 ## Installation
 
