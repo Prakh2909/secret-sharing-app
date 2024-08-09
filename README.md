@@ -62,8 +62,8 @@ ENCRYPTION_KEY=your-256-bit-encryption-key-in-hex
 ### 1. Clone the Repository
 
 ```bash
-git clone https://github.com/your-username/your-repository.git
-cd your-repository
+git clone https://github.com/Prakh2909/secret-sharing-app.git
+cd secret-sharing-app
 ```
 
 ### 2. Install Dependencies
